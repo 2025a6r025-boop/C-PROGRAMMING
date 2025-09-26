@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main(){
+    float r;
+    float a;
+    float l,w;
+    scanf ("%f", &r);
+    float Circle_area = 3.1416 * r * r;
+    
+    float Circle_perimeter = 2 * 3.1416 * r;
+    
+    scanf("%f", &a);
+    float Square_area = a * a;
+   
+    float Square_perimeter = 4 * a;
+    
+    scanf("%f %f", &l, &w);
+    float Rectangle_area = l * w;
+    
+    float Rectangle_perimeter = 2 * (l+w);
+    
+    printf("Circle: %.2f %.2f\n", Circle_area, Circle_perimeter);
+    printf("Square: %.2f %.2f\n", Square_area, Square_perimeter);
+    printf("Rectangle: %.2f %.2f\n", Rectangle_area , Rectangle_perimeter);
+    
+          
+    return 0;
+}
