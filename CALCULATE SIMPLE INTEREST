@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int P;
+    float R;
+    float T;
+    scanf("%d %f %f", &P, &R, &T);
+    float simpleinterest = (P * R * T)/100;
+    printf("%.2f", simpleinterest);
+    
+    
+    return 0;
+}
