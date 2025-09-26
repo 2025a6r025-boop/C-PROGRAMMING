@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int cm;
+    scanf("%d", &cm);
+   float Meters = cm/100.0;
+    float Kilometers = cm/100000.0;
+    printf("%.2f %.2f", Meters, Kilometers);
+    
+
+       
+    return 0;
+}
