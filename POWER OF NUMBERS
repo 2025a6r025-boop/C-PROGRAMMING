@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+   int a;
+    int b;
+    scanf("%d", &a);
+    scanf("%d", &b);
+    double result = pow(a, b);
+    printf("%0.lf\n", result);
+    
+    return 0;
+}
