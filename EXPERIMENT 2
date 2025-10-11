@@ -1,3 +1,4 @@
+// Program for arithmetic operations like addition,substraction,multiplication and remainder.
 #include<stdio.h>
 int main(){
     int x,y,addition,subtraction,multiplication,remainder;
@@ -16,7 +17,7 @@ int main(){
     return 0;
 }
 
-
+// Program to calculate area and perimeter of circle,square,rectangle.
 #include<stdio.h>
 int main(){
     float radius,area,perimeter,side,length,breadth;
@@ -43,7 +44,7 @@ int main(){
     return 0;
 }
 
-
+// Program to find Euclidean distance between two points.
 #include<stdio.h>
 #include<math.h>
 int main (){
