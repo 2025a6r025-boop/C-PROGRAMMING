@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+
+
+
+    int amount, remainder;
+    scanf("%d", &amount);
+
+    if (amount / 500 > 0)
+        printf("500: %d\n", amount / 500);
+    remainder = amount % 500;
+
+    if (remainder / 100 > 0)
+        printf("100: %d\n", remainder / 100);
+    remainder = remainder % 100;
+
+    if (remainder / 50 > 0)
+        printf("50: %d\n", remainder / 50);
+    remainder = remainder % 50;
+
+    if (remainder / 20 > 0)
+        printf("20: %d\n", remainder / 20);
+    remainder = remainder % 20;
+
+    if (remainder / 10 > 0)
+        printf("10: %d\n", remainder / 10);
+    remainder = remainder % 10;
+
+    if (remainder / 5 > 0)
+        printf("5: %d\n", remainder / 5);
+    remainder = remainder % 5;
+
+    if (remainder / 2 > 0)
+        printf("2: %d\n", remainder / 2);
+    remainder = remainder % 2;
+
+    if (remainder > 0)
+        printf("1: %d\n", remainder);
+    
+    
+    return 0;
+}
