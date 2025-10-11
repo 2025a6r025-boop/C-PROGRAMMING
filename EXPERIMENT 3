@@ -1,0 +1,70 @@
+// Program to check if a number is even or odd.
+#include<stdio.h>
+int main (){
+    int n;
+    printf("Enter the number:");
+    scanf("%d",&n);
+    if(n%2==0){
+printf("%d is Even",n);
+    }
+    else{
+        printf("%d is Odd",n);
+    }
+    return 0;
+}
+
+// Program to check whether the alphabet is vowel or consonant.
+#include<stdio.h>
+int main (){
+    char c;
+    printf("Enter the alphabet:");
+    scanf("%c",&c);
+    if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'||c=='A'||c=='E'||c=='I'||c=='O'||c=='U'){
+        printf("%c is Vowel",c);
+    }
+    else{
+        printf("%c is Consonant",c);
+    }
+    return 0;
+}
+
+// Program to calculate area and perimeter of circle,square and rectangle based on user choice.
+#include<stdio.h>
+int main (){
+    int choice;
+    float radius,side,length,breadth,area,perimeter;
+    printf("Enter choice number(1-3):");
+    scanf("%d",&choice);
+switch(choice){
+    case 1:
+    printf("Enter radius:");
+    scanf("%f",&radius);
+    area=3.1416*radius*radius;
+    perimeter=2*3.1416*radius;
+    printf("Area of circle= %f\n",area);
+    printf("Perimeter of circle= %f\n",perimeter);
+    break;
+    case 2:
+    printf("Enter side:");
+    scanf("%f",&side);
+    area=side*side;
+    perimeter=4*side;
+    printf("Area of Square= %f\n",area);
+    printf("Perimeter of square= %f\n",perimeter);
+    break;
+    case 3:
+    printf("Enter length:");
+    scanf("%f",&length);
+   printf("Enter breadth:");
+    scanf("%f",&breadth);
+    
+    area=length*breadth;
+    perimeter=2*(length+breadth);
+    printf("Area of rectangle= %f\n",area);
+    printf("Perimeter of rectangle= %f\n",perimeter);
+    break;
+    default:
+    printf("Invalid choice");
+}
+    return 0;
+}
