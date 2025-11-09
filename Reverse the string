@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<math.h>
+int main(){
+    char S[1000],rstring[1000];
+    scanf(" %[^\n]",S);
+   int k=0;
+    for(int i=strlen(S)-1;i>=0;i--){
+        rstring[k++]=S[i];
+    }
+    rstring[k++]='\0';
+    printf("%s\n",rstring);
+    return 0;
+}
