@@ -1,0 +1,23 @@
+#include <stdio.h> 
+#include <string.h> 
+#include <math.h> 
+#include <stdlib.h> 
+struct Student{ 
+    char name[50];
+}s1; 
+struct date{ 
+    int date;
+    int month;
+    int year; 
+}s2; 
+int main() { 
+    struct Student s1; 
+    scanf(" %[^\n]%*c",s1.name); 
+    struct date s2;
+    scanf("%d",&s2.date);
+    scanf("%d",&s2.month);
+    scanf("%d",&s2.year);
+    printf("Name: %s\n",s1.name); 
+    printf("Date of Birth: %d/%d/%d",s2.date,s2.month,s2.year); 
+    return 0;
+} 
