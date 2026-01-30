@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int num;
+    scanf("%d",&num);
+    int arr[num][num];
+    for(int i=0;i<num;i++){
+        for(int j=0;j<num;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    int primarysum=0;
+    int secondarysum=0;
+    for(int i=0;i<num;i++){
+        primarysum+=arr[i][i];
+        secondarysum+=arr[i][num-i-1];
+    }
+    int totalsum=primarysum+secondarysum;
+    if(num%2==1){
+        int center=arr[num/2][num/2];
+        totalsum-=center;
+    }
+    printf("Sum of Primary Diagonal: %d\n",primarysum);
+    printf("Sum of Secondary Diagonal: %d\n",secondarysum);
+    printf("Total Sum of Both Diagonals: %d\n",totalsum);
+    return 0;
+}
